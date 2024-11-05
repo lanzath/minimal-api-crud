@@ -19,3 +19,23 @@ Para rodar a API basta apenas rodar o comando `dotnet run` na raiz do projeto.
 Ex:
 <img width="758" alt="image" src="https://github.com/user-attachments/assets/6e32e769-4ecd-4a85-8a1c-2bb8b3ce0143">
 
+# Exemplo de payload
+
+POST - `/contacts`
+```json
+{
+  "name": "Jhon Doe",
+  "email": "jhon.doe@email.com",
+  "phone": "1234567891011"
+}
+```
+
+# Boa práticas de APIs REST
+
+1. Endpoints descritivos, no plural e kebab-case
+  1. `/contacts/1`
+  2. `/users`
+  3. `/user-groups`
+2. Usar rotas apropriadas para cada ação, POST, PUT, PATCH, GET, DELETE.
+3. Receber requisições e devolver respostas em `json`
+4. Devolver status code de acordo com o contexto (ex: 201 para created, 204 para delete, 200 para GET e PUT, 400 para falha de validação, etc.).
