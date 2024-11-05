@@ -30,7 +30,7 @@ POST - `/contacts`
 }
 ```
 
-# Boa práticas de APIs REST
+# Boas práticas de APIs REST
 
 1. Endpoints descritivos, no plural e kebab-case
   1. `/contacts/1`
